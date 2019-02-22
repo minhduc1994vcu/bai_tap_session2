@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh</title>
+</head>
+<body>
+<form>
+    <strong> Caculator</strong><br><br>
+
+    <input type="number" id="so_thu_1">
+    <input type="number" id="so_thu_2"><br><br>
+    <input type="button" value="Addition(+)" onclick="cong()">
+    <input type="button" value="Subtraction(-)" onclick="tru()">
+    <input type="button" value="Multiplication(X)" onclick="nhan()">
+    <input type="button" value="Division(/)" onclick="chia()"><br><br>
+
+    <input id="rs">
+</form>
+<script>
+    function cong() {
+        let a=parseInt(document.getElementById('so_thu_1').value);
+        let b=parseInt(document.getElementById('so_thu_2').value);
+        document.getElementById('rs').value=a+b
+    }
+    function tru() {
+        let a=parseInt(document.getElementById('so_thu_1').value);
+        let b=parseInt(document.getElementById('so_thu_2').value);
+        document.getElementById('rs').value=a-b
+    }
+    function nhan() {
+        let a=parseInt(document.getElementById('so_thu_1').value);
+        let b=parseInt(document.getElementById('so_thu_2').value);
+        document.getElementById('rs').value=a*b
+    }
+    function chia() {
+        let a=parseInt(document.getElementById('so_thu_1').value);
+        let b=parseInt(document.getElementById('so_thu_2').value);
+        document.getElementById('rs').value=a/b
+    }
+</script>
+</body>
+</html>
